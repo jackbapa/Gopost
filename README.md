@@ -1,21 +1,20 @@
 # Gopost  
-httppost-for-golan  
-****
 :rainbow::rainbow::rainbow:  
+****
+httppost-for-golan  
 go语言发送post请求 
 
 
 ```diff
-+ 内置chorme请求头，防反爬
++ 内置chorme请求头，模拟浏览器请求，防反爬
 - 忽略服务器https验证，防无证书下post失败
 ! 以 map或切片 传递键值对，可一key配多value（map下）
 + 以body_reader接口读取所有实现reader接口的类
 ！使用mahonia实现gbk-utf8转码
 ```
 
-===========================  
-:high_brightness:  
-## 完整的post命令发送
+****
+:high_brightness:## 完整的post命令发送
 ```go
 func Gopost_full(url string , k_v_map map[string][]string , body_reader io.Reader) (string , error)
 ```
