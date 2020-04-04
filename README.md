@@ -47,7 +47,7 @@ func Gopost_k_v_urlencode(url string , key []string , value []string ) (string ,
 
 
 
-### gbk -> utf8 for strings ,  转换gbk编码到utf8编码，解决乱码，感谢mahonia:high_brightness:
+## gbk -> utf8 for strings ,  转换gbk编码到utf8编码，解决乱码，感谢mahonia:high_brightness:
 ```go
 func Html_utf8(resp string)(string)
 ```
