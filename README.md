@@ -27,13 +27,13 @@ func Gopost_full(url string , k_v_map map[string][]string , body_reader io.Reade
 var req_body = ""
 body_reader := strings.NewReader(req_body)
 //声明查询参数  k_v_map
-var user_pssword = map[string][]string{
+var k_v_map = map[string][]string{
     "name":[]string{"wy","wxy"}
 }
 //声明post地址，即base_url
 var base_url = "1techbook.com" 
 //发送请求
-response , err := Gopost_full(url  , user_pssword , body_reader )
+response , err := Gopost_full(url  , k_v_map , body_reader )
 //返回response为字符串，提供了函数Html_utf8实现乱码的utf8转换
 ```
 
