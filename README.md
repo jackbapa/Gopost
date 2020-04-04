@@ -43,7 +43,8 @@ response , err := Gopost_full(url  , user_psswor , body_reader )
 func Gopost_k_v_urlencode(url string , key []string , value []string ) (string , error)
 ``` 
 -  url：  post目标地址，即base_url
--  key和value:   post参数：键key，以切片的形式与值value对一一对应
+-  key和value:   post参数：键key，以切片的形式与值value对一一对应  
+
 
 
 
