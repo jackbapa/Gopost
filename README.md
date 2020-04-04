@@ -33,7 +33,7 @@ var user_pssword = map[string][]string{
 //声明post地址，即base_url
 var base_url = "1techbook.com" 
 //发送请求
-response , err := Gopost_full(url  , user_psswor , body_reader )
+response , err := Gopost_full(url  , user_pssword , body_reader )
 //返回response为字符串，提供了函数Html_utf8实现乱码的utf8转换
 ```
 
