@@ -2,5 +2,10 @@
 httppost-for-golan
 ===========================
 目前提供两个函数
+
+##完整的post命令发送
 ```go
-func Gopsot_urlencode(base_url string ,key_value map[string][]string)()
+func Gopost_full(url string , k_v_map map[string][]string , body_reader io.Reader) (string,error)
+```
+###
+- [x]url：post目标地址，即base_url
