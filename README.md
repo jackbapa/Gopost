@@ -1,6 +1,8 @@
 # Gopost
+go语言发送post请求
 :rainbow:	:rainbow:	:rainbow:	
-httppost-for-golan  go语言发送post请求
+httppost-for-golan  
+
 ```diff
 + 内置chorme请求头，防反爬
 - 忽略服务器https验证，防无证书下post失败
@@ -15,9 +17,9 @@ httppost-for-golan  go语言发送post请求
 ```go
 func Gopost_full(url string , k_v_map map[string][]string , body_reader io.Reader) (string , error)
 ```
-- [x] url：  post目标地址，即base_url
-- [x] k_v_map：  以map类型表述的查询参数,其中key为string类型，value为string切片
-- [x] body_reader:  为实现io_reader接口的数据类型，用于写入request.body，即写入请求体的数据
+-  url：  post目标地址，即base_url
+-  k_v_map：  以map类型表述的查询参数,其中key为string类型，value为string切片
+-  body_reader:  为实现io_reader接口的数据类型，用于写入request.body，即写入请求体的数据
 举例如下，查询键（key）为name，值（value）为wy和wxy，url为1techbook.com，请求体为空字符串：
 ```go
 //声明请求体为空字符串
@@ -39,8 +41,8 @@ response , err := Gopost_full(url  , user_psswor , body_reader )
 ```go
 func Gopost_k_v_urlencode(url string , key []string , value []string ) (string , error)
 ``` 
-- [x] url：  post目标地址，即base_url
-- [x] key和value:   post参数：键key，以切片的形式与值value对一一对应
+-  url：  post目标地址，即base_url
+-  key和value:   post参数：键key，以切片的形式与值value对一一对应
 
 
 :high_brightness:
