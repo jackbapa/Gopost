@@ -1,7 +1,7 @@
 # Gopost  
 :rainbow::rainbow::rainbow:  
 ****
-httppost-for-golan  
+httppost-for-golang  
 go语言发送post请求 
 
 
