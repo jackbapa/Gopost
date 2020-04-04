@@ -1,6 +1,6 @@
 # Gopost
 :rainbow:	:rainbow:	:rainbow:	
-httppost-for-golan
+httppost-for-golan  go语言发送post请求
 ```diff
 + 内置chorme请求头，防反爬
 - 忽略服务器https验证，防无证书下post失败
@@ -10,12 +10,11 @@ httppost-for-golan
 ```
 
 ===========================
-
+:high_brightness:
 ## 完整的post命令发送
 ```go
 func Gopost_full(url string , k_v_map map[string][]string , body_reader io.Reader) (string , error)
 ```
-
 - [x] url：  post目标地址，即base_url
 - [x] k_v_map：  以map类型表述的查询参数,其中key为string类型，value为string切片
 - [x] body_reader:  为实现io_reader接口的数据类型，用于写入request.body，即写入请求体的数据
@@ -34,7 +33,7 @@ var base_url = "1techbook.com"
 response , err := Gopost_full(url  , user_psswor , body_reader )
 //返回response为字符串，提供了函数Html_utf8实现乱码的utf8转换
 ```
-
+:high_brightness:
 ## 简单的post命令发送
 
 ```go
@@ -44,6 +43,7 @@ func Gopost_k_v_urlencode(url string , key []string , value []string ) (string ,
 - [x] key和value:   post参数：键key，以切片的形式与值value对一一对应
 
 
+:high_brightness:
 ### gbk -> utf8 for strings ,  转换gbk编码到utf8编码，解决乱码，感谢mahonia
 ```go
 func Html_utf8(resp string)(string)
