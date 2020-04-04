@@ -1,9 +1,8 @@
 # Gopost
-go语言发送post请求
-
 ****
-###:rainbow::rainbow::rainbow:	
-###httppost-for-golan  
+:rainbow::rainbow::rainbow:  
+go语言发送post请求 
+httppost-for-golan  
 
 ```diff
 + 内置chorme请求头，防反爬
@@ -13,8 +12,8 @@ go语言发送post请求
 ！使用mahonia实现gbk-utf8转码
 ```
 
-===========================
-:high_brightness:
+===========================  
+:high_brightness:  
 ## 完整的post命令发送
 ```go
 func Gopost_full(url string , k_v_map map[string][]string , body_reader io.Reader) (string , error)
